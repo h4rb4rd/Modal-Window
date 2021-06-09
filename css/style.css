@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 100px 0px;
+  margin: 0px auto;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* cards */
+.fruit-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.fruit-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+.fruit-card__image {
+  flex: 1 1 auto;
+  margin: 0px 0px 10px 0px;
+}
+.fruit-card__title {
+  margin: 0px 0px 20px 0px;
+}
+.fruit-card__buttons {
+  display: flex;
+}
+.fruit-card__btn {
+  min-width: 70px;
+  min-height: 25px;
+  color: #fff;
+  font-size: 14;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease 0s;
+}
+.fruit-card__btn--primary {
+  background: #1976d2;
+  margin: 0px 10px 0px 0px;
+}
+.fruit-card__btn--primary:hover {
+  background: #1565c0;
+}
+.fruit-card__btn--secondary {
+  background: #d32f2f;
+}
+.fruit-card__btn--secondary:hover {
+  background: #c62828;
+}
